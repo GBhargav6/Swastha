@@ -1,0 +1,127 @@
+
+header {
+  background-color: #3aafa9;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#toggle {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#top_bar {
+  flex: 1;
+  text-align: center;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+.appointment {
+  margin-left: 10px;
+}
+
+#appointment_btn {
+  padding: 12px 20px; /* Unique properties for the appointment button */
+  background-color:darkblue;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+}
+#appointment_btn>a{
+  color: white;
+  text-decoration: none;
+}
+
+#appointment_btn:hover {
+  background-color: darkturquoise;
+}
+
+
+
+/* toggele Section */
+#toggle_section {
+  display: none;
+  background-color: beige;
+}
+
+#toggle-section-btn {
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #0d1117;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.value>a{
+  text-decoration: none;
+  color: white;
+}
+
+.value:not(:active):hover,
+.value:focus {
+  background-color: #21262c;
+}
+
+.value:focus,
+.value:active {
+  background-color: #1a1f24;
+  outline: none;
+}
+
+.value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #2f81f7;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.value svg {
+  width: 15px;
+}
+

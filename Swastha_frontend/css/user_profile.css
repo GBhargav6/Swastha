@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#def2f1
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3aafa9;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.value {
+    color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+}

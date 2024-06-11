@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/doctor_registration.css">
+</head>
+<body>
+    <form class="form">
+        <p class="title">Admin Register </p>
+        <p class="message">Signup now and get full access to our app. </p>
+            <div class="flex">
+            <label>
+                <input class="input" type="text" id="firstName" placeholder="" required="">
+                <span>Firstname</span>
+            </label>
+    
+            <label>
+                <input class="input" type="text" id="lastName" placeholder="" required="">
+                <span>Last name</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input class="input" type="email" id="email" placeholder="" required="">
+            <span>Email</span>
+    </label>    
+        <label>
+            <input class="input" type="password" id="password" placeholder="" required="" min="8">
+            <span id="span">Password</span>
+        </label>
+        <label>
+            <input class="input" type="password" id="conf_password" placeholder="" required="" >
+            <span id="conf_span">Confirm password</span> 
+        </label>
+       
+        <label>
+            <input class="input" type="admin" id="admin" value="ADMIN" required="" readonly >
+            <span id="">Admin</span> 
+        </label>
+        <button class="submit">Signup</button>
+        <p class="signin">Already have an acount ? <a href="../html/admin_login.html">Signin</a> </p>
+    </form>
+</body>
+<script src="../js/admin_register.js"></script>
+</html>

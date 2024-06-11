@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .verified-icon {
+    font-size: 4rem;
+    color: green;
+    margin-bottom: 20px;
+  }
+  
+  .celebration-container {
+    position: relative;
+  }
+  
+  .flower, .paper {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .flower {
+    top: 20px;
+    left: 50px;
+    width: 80px;
+    animation: flower-fall 5s linear infinite;
+  }
+  
+  .paper {
+    top: 50px;
+    right: 50px;
+    width: 60px;
+    animation: paper-fall 5s linear infinite;
+  }
+  
+  @keyframes flower-fall {
+    0% { opacity: 1; transform: translateY(-100px); }
+    100% { opacity: 1; transform: translateY(100vh); }
+  }
+  
+  @keyframes paper-fall {
+    0% { opacity: 1; transform: translateY(-100px); }
+    100% { opacity: 1; transform: translateY(100vh); }
+  }
+  
